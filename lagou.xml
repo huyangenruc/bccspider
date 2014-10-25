@@ -1,0 +1,141 @@
+<process id="4">
+<id>4</id>
+<node>
+	<url>
+	<![CDATA[http://www.lagou.com/]]>
+	</url>
+	<depth>0</depth>
+	<regionXpath>
+		<property_group>
+			<property name="value">//*[@id=\"sidebar\"]</property>
+			<property name="startWithFilter">http://www.lagou.com/zhaopin/</property>
+		</property_group>
+	</regionXpath>
+</node>
+
+<node>
+	<url>
+	<![CDATA[http://www.lagou.com/zhaopin/Java?labelWords=label]]>
+	</url>
+	<depth>1</depth>
+	<regionXpath>
+		<property_group>
+			<property name="value">//*[@id=\"container\"]/div[2]/ul</property>
+			<property name="startWithFilter">http://www.lagou.com/jobs/</property>
+		</property_group>
+	</regionXpath>
+	
+	<loopXpath>
+		<property name="value">//*[@id=\"workplaceSelect\"]</property>
+		<property name="value">//*[@id=\"container\"]/div[2]/div[4]</property>
+		<property name="value">//*[@id=\"container\"]/div[2]/dl[1]</property>
+	</loopXpath>	
+</node>
+
+
+<node>
+	<url>
+	<![CDATA[http://www.lagou.com/jobs/159865.html?source=search]]></url>
+	<depth>2</depth>
+	<collectDataXpath>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">职位</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dt/h1/text()</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">公司名</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dt/h1/div</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">薪资</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dd[1]/span[1]</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">工作地点</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[2]/dl/dd/div[1]</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">发布日期</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dd[1]/div</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">工作性质</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dd[1]/span[5]</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">工作经验</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dd[1]/span[3]</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">最低学历</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dd[1]/span[4]</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">招聘人数</property>
+            <property name="xpath"></property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">职位类别</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dt/h1/text()</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">职位描述</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl[1]/dd[2]</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">职位诱惑</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[1]/dl/dd[1]/text()</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">目前阶段</property>
+            <property name="xpath">//*[@id=\"container\"]/div[1]/div[2]/dl/dd/ul[2]</property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">url</property>
+            <property name="xpath"></property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">来源</property>
+            <property name="xpath"></property>
+            <property name="desc"/>
+        </property_group>
+        <property_group>
+            <property name="type">1</property>
+            <property name="name">采集时间</property>
+            <property name="xpath"></property>
+            <property name="desc"/>
+        </property_group>
+	</collectDataXpath>
+	
+</node>
+
+</process>
