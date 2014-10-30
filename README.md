@@ -10,5 +10,9 @@ bccspider
 
 4、采集的json数据实时post到elasticsearch中，集成ik中文分词，实现准实时检索
 
-5、配置简单，简单的xml流程图就可以实现某些站点的全网采集。可参考lagou.xml配置图。
+5、url通过BloomFilter过滤,通过设置预估url爬取规模和false positive 概率控制内存的使用
+
+6、由于QWebview只能在主线程中实例化，只能采用多进程的方式实现并行采集，进程间通过共享内存或者localsocket通信
+
+7、配置简单，简单的xml流程图就可以实现某些站点的全网采集。可参考lagou.xml配置图。
 
